@@ -37,9 +37,12 @@ Verdict:
 
 ### 1) Python deps
 
+> **⚠️ IMPORTANT:** 
+Use ```*Python 3.11```. ```Python 3.14``` has compatibility issues with scientific packages like numpy that require compilation from source.
+
 ```bash
 cd invoice-tampering-detector
-python -m venv .venv
+python3.11 -m venv .venv  # Use python3.11, not python
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
